@@ -16,9 +16,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-commentary'
 Bundle 'kien/ctrlp.vim'
-Bundle 'elixir-lang/vim-elixir'
-" Bundle 'wincent/Command-T'
+Bundle 'mileszs/ack'
 
 syntax on
 filetype plugin indent on
