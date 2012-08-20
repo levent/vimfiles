@@ -18,7 +18,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-commentary'
 Bundle 'kien/ctrlp.vim'
-Bundle 'mileszs/ack'
+Bundle 'mileszs/ack.vim'
 
 syntax on
 filetype plugin indent on
@@ -60,6 +60,10 @@ set laststatus=2  " Always show status line.
 set tags=./tags;
 set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|vendor|coverage)$',
+  \ }
 set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 map Q <Nop>
 map K <Nop>
