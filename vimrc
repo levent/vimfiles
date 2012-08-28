@@ -18,6 +18,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-commentary'
 Bundle 'kien/ctrlp.vim'
+Bundle 'ervandew/supertab'
 Bundle 'mileszs/ack.vim'
 
 syntax on
