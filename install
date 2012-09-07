@@ -5,5 +5,5 @@ here="$(dirname "$0")"
 here="$(cd "$here"; pwd)"
 
 if [ ! \( -e "$HOME/.vimrc" \) ]; then
-  ln -sfhv "$here"/vimrc "${HOME}/.vimrc"
+  ln -sfv "$here"/vimrc "${HOME}/.vimrc"
 fi
