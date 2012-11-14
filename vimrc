@@ -21,6 +21,8 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'mileszs/ack.vim'
+Bundle 'benmills/vimux'
+Bundle 'kien/rainbow_parentheses.vim'
 
 syntax on
 filetype plugin indent on
@@ -80,3 +82,7 @@ syntax enable
 set background=dark
 colorscheme desert
 
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
