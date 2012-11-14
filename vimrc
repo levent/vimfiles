@@ -21,8 +21,9 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'mileszs/ack.vim'
-Bundle 'benmills/vimux'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'jgdavey/tslime.vim'
+Bundle 'jgdavey/vim-turbux'
 
 syntax on
 filetype plugin indent on
