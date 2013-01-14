@@ -10,3 +10,5 @@ git submodule update
 if [ ! \( -e "$HOME/.vimrc" \) ]; then
   ln -sfv "$here"/vimrc "${HOME}/.vimrc"
 fi
+
+vim +BundleInstall +qall
