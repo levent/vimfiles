@@ -20,7 +20,8 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-commentary'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'jgdavey/tslime.vim'
@@ -39,7 +40,7 @@ map <Leader>d odebugger<cr>puts 'debugger'<esc>:w<cr>
 map <Leader>s <Esc>:w<CR>
 map <C-h> :nohl<cr>
 
-" set backspace=2 " make backspace work like most other apps
+set backspace=2 " make backspace work like most other apps
 set encoding=utf-8
 set showcmd
 set number
