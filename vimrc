@@ -91,3 +91,4 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let g:turbux_command_prefix = 'bundle exec'
+let g:ycm_key_detailed_diagnostics = '<leader>b'
