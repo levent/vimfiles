@@ -26,6 +26,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
+Bundle 'airblade/vim-gitgutter'
 
 syntax on
 filetype plugin indent on
@@ -92,3 +93,5 @@ au Syntax * RainbowParenthesesLoadBraces
 
 let g:turbux_command_prefix = 'bundle exec'
 let g:ycm_key_detailed_diagnostics = '<leader>b'
+
+highlight clear SignColumn
