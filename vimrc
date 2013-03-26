@@ -12,7 +12,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " original repos on github
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
@@ -84,8 +83,6 @@ au BufNewFile,BufRead *.less set filetype=css
 au BufNewFile,BufRead *.scss set filetype=sass
 syntax enable
 set background=dark
-colorscheme solarized
-
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
