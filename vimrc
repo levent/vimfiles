@@ -26,6 +26,7 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'bronson/vim-trailing-whitespace'
 
 syntax on
 filetype plugin indent on
