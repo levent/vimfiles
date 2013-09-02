@@ -40,6 +40,7 @@ map <CR> o<Esc>
 map <Leader>n :set nopaste<cr>
 map <Leader>p :set paste<cr>
 map <Leader>d odebugger<cr>puts 'debugger'<esc>:w<cr>
+map <Leader>b obyebug<esc>:w<cr>
 map <Leader>s <Esc>:w<CR>
 map <C-h> :nohl<cr>
 
