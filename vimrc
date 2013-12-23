@@ -29,6 +29,8 @@ Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'rodjek/vim-puppet'
+Bundle 'mustache/vim-mode'
 
 syntax on
 filetype plugin indent on
