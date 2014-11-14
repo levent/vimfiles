@@ -31,6 +31,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'rodjek/vim-puppet'
 Bundle 'mustache/vim-mode'
+Bundle 'slim-template/vim-slim'
 
 syntax on
 filetype plugin indent on
@@ -89,6 +90,7 @@ au BufNewFile,BufRead *.less set filetype=css
 au BufNewFile,BufRead *.scss set filetype=sass
 syntax enable
 set background=dark
+colorscheme hemisu
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
