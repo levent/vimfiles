@@ -32,6 +32,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'rodjek/vim-puppet'
 Bundle 'mustache/vim-mode'
 Bundle 'slim-template/vim-slim'
+Bundle 'kchmck/vim-coffee-script'
 
 syntax on
 filetype plugin indent on
@@ -42,7 +43,6 @@ map <S-Enter> O<Esc>
 map <CR> o<Esc>
 map <Leader>n :set nopaste<cr>
 map <Leader>p :set paste<cr>
-map <Leader>d odebugger<cr>puts 'debugger'<esc>:w<cr>
 map <Leader>b obyebug<cr>puts 'byebug'<esc>:w<cr>
 map <Leader>s <Esc>:w<CR>
 map <C-h> :nohl<cr>
@@ -76,7 +76,7 @@ set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|vendor|coverage)$',
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|tmp|vendor|coverage)$',
   \ }
 set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 map Q <Nop>
