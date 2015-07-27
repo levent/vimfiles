@@ -33,6 +33,8 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'mustache/vim-mode'
 Bundle 'slim-template/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'othree/html5.vim'
 
 syntax on
 filetype plugin indent on
