@@ -33,6 +33,7 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'mustache/vim-mode'
 Bundle 'slim-template/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'hail2u/vim-css3-syntax'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'othree/html5.vim'
 
