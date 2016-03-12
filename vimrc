@@ -20,10 +20,11 @@ Plugin 'thoughtbot/vim-rspec'
 
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
+" Bundle 'tpope/vim-surround' targets.vim instead
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-commentary'
+Bundle 'wellle/targets.vim'
 " Bundle 'vim-scripts/VimClojure'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
