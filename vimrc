@@ -16,6 +16,8 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 
+Plugin 'thoughtbot/vim-rspec'
+
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
@@ -106,5 +108,11 @@ au Syntax * RainbowParenthesesLoadBraces
 
 let g:turbux_command_prefix = 'bundle exec'
 let g:ycm_key_detailed_diagnostics = '<leader>b'
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 highlight clear SignColumn
