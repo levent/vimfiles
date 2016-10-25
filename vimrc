@@ -17,6 +17,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'elixir-lang/vim-elixir'
 
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-fugitive'
@@ -44,6 +45,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'othree/html5.vim'
+Bundle 'fatih/vim-go'
+Bundle 'tpope/vim-unimpaired.git'
 
 syntax on
 filetype plugin indent on
@@ -56,6 +59,7 @@ map <Leader>n :set nopaste<cr>
 map <Leader>p :set paste<cr>
 map <Leader>b obyebug<cr>puts 'byebug'<esc>:w<cr>
 map <Leader>s <Esc>:w<CR>
+map <Leader>h :nohl<cr>
 map <C-h> :nohl<cr>
 
 set backspace=2 " make backspace work like most other apps
