@@ -18,6 +18,8 @@ Bundle 'garbas/vim-snipmate'
 
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'milch/vim-fastlane'
 
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-fugitive'
@@ -33,7 +35,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mileszs/ack.vim'
-Bundle 'kien/rainbow_parentheses.vim'
+" Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'luochen1990/rainbow'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'airblade/vim-gitgutter'
@@ -46,7 +49,9 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'othree/html5.vim'
 Bundle 'fatih/vim-go'
+Bundle 'Blackrush/vim-gocode'
 Bundle 'tpope/vim-unimpaired.git'
+Bundle 'vim-ruby/vim-ruby'
 
 syntax on
 filetype plugin indent on
@@ -105,11 +110,10 @@ au BufNewFile,BufRead *.less set filetype=css
 au BufNewFile,BufRead *.scss set filetype=sass
 syntax enable
 set background=dark
-colorscheme hemisu
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+let g:rainbow_active = 1
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" au Syntax * RainbowParenthesesLoadSquare
 
 let g:turbux_command_prefix = 'bundle exec'
 let g:ycm_key_detailed_diagnostics = '<leader>b'
@@ -121,3 +125,4 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 highlight clear SignColumn
+colorscheme smyck
