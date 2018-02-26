@@ -2,58 +2,78 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible
-filetype off
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'flowtype/vim-flow'
+Plug 'janko-m/vim-test'
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
-" original repos on github
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
+Plug 'tpope/vim-fugitive'
 
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'milch/vim-fastlane'
+Plug 'luochen1990/rainbow'
+Plug 'wellle/targets.vim'
 
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-fugitive'
-" Bundle 'tpope/vim-surround' targets.vim instead
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-commentary'
-Bundle 'wellle/targets.vim'
-" Bundle 'vim-scripts/VimClojure'
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
-Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mileszs/ack.vim'
-" Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'luochen1990/rainbow'
-Bundle 'jgdavey/tslime.vim'
-Bundle 'jgdavey/vim-turbux'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'rodjek/vim-puppet'
-Bundle 'mustache/vim-mode'
-Bundle 'slim-template/vim-slim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'othree/html5.vim'
-Bundle 'fatih/vim-go'
-Bundle 'Blackrush/vim-gocode'
-Bundle 'tpope/vim-unimpaired.git'
-Bundle 'vim-ruby/vim-ruby'
-
-syntax on
-filetype plugin indent on
+Plug 'airblade/vim-gitgutter'
+Plug 'ervandew/supertab'
+call plug#end()
+" filetype off
+" 
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+" 
+" " let Vundle manage Vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+" 
+" " original repos on github
+" Bundle 'MarcWeber/vim-addon-mw-utils'
+" Bundle 'tomtom/tlib_vim'
+" Bundle 'garbas/vim-snipmate'
+" 
+" Plugin 'thoughtbot/vim-rspec'
+" Plugin 'elixir-lang/vim-elixir'
+" Plugin 'derekwyatt/vim-scala'
+" Plugin 'milch/vim-fastlane'
+" 
+" Bundle 'tpope/vim-repeat'
+" Bundle 'tpope/vim-fugitive'
+" " Bundle 'tpope/vim-surround' targets.vim instead
+" Bundle 'tpope/vim-rails'
+" Bundle 'tpope/vim-bundler'
+" Bundle 'tpope/vim-commentary'
+" Bundle 'wellle/targets.vim'
+" " Bundle 'vim-scripts/VimClojure'
+" Bundle 'guns/vim-clojure-static'
+" Bundle 'tpope/vim-fireplace'
+" Bundle 'kien/ctrlp.vim'
+" Bundle 'ervandew/supertab'
+" Bundle 'Lokaltog/vim-easymotion'
+" Bundle 'mileszs/ack.vim'
+" " Bundle 'kien/rainbow_parentheses.vim'
+" Bundle 'luochen1990/rainbow'
+" Bundle 'jgdavey/tslime.vim'
+" Bundle 'jgdavey/vim-turbux'
+" Bundle 'airblade/vim-gitgutter'
+" Bundle 'bronson/vim-trailing-whitespace'
+" Bundle 'rodjek/vim-puppet'
+" Bundle 'mustache/vim-mode'
+" Bundle 'slim-template/vim-slim'
+" Bundle 'kchmck/vim-coffee-script'
+" Bundle 'hail2u/vim-css3-syntax'
+" Bundle 'cakebaker/scss-syntax.vim'
+" Bundle 'othree/html5.vim'
+" Bundle 'fatih/vim-go'
+" Bundle 'Blackrush/vim-gocode'
+" Bundle 'tpope/vim-unimpaired.git'
+" Bundle 'vim-ruby/vim-ruby'
+" Bundle 'hashivim/vim-terraform'
+" 
+" syntax on
+" filetype plugin indent on
 
 let mapleader = ","
 
@@ -117,11 +137,23 @@ let g:rainbow_active = 1
 let g:turbux_command_prefix = 'bundle exec'
 let g:ycm_key_detailed_diagnostics = '<leader>b'
 
+let g:terraform_fmt_on_save = 1
+
+" GitGutter styling to use · instead of +/-
+let g:gitgutter_sign_added = '∙'
+let g:gitgutter_sign_modified = '∙'
+let g:gitgutter_sign_removed = '∙'
+let g:gitgutter_sign_modified_removed = '∙'
+
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>r :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+nmap ; :Buffers<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
 
 highlight clear SignColumn
 colorscheme smyck
