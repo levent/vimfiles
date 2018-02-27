@@ -27,59 +27,6 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rails'
 call plug#end()
-" filetype off
-" 
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-" 
-" " let Vundle manage Vundle, required
-" Plugin 'VundleVim/Vundle.vim'
-" 
-" " original repos on github
-" Bundle 'MarcWeber/vim-addon-mw-utils'
-" Bundle 'tomtom/tlib_vim'
-" Bundle 'garbas/vim-snipmate'
-" 
-" Plugin 'thoughtbot/vim-rspec'
-" Plugin 'elixir-lang/vim-elixir'
-" Plugin 'derekwyatt/vim-scala'
-" Plugin 'milch/vim-fastlane'
-" 
-" Bundle 'tpope/vim-repeat'
-" Bundle 'tpope/vim-fugitive'
-" " Bundle 'tpope/vim-surround' targets.vim instead
-" Bundle 'tpope/vim-rails'
-" Bundle 'tpope/vim-bundler'
-" Bundle 'tpope/vim-commentary'
-" Bundle 'wellle/targets.vim'
-" " Bundle 'vim-scripts/VimClojure'
-" Bundle 'guns/vim-clojure-static'
-" Bundle 'tpope/vim-fireplace'
-" Bundle 'kien/ctrlp.vim'
-" Bundle 'ervandew/supertab'
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'mileszs/ack.vim'
-" " Bundle 'kien/rainbow_parentheses.vim'
-" Bundle 'luochen1990/rainbow'
-" Bundle 'jgdavey/tslime.vim'
-" Bundle 'jgdavey/vim-turbux'
-" Bundle 'airblade/vim-gitgutter'
-" Bundle 'bronson/vim-trailing-whitespace'
-" Bundle 'rodjek/vim-puppet'
-" Bundle 'mustache/vim-mode'
-" Bundle 'slim-template/vim-slim'
-" Bundle 'kchmck/vim-coffee-script'
-" Bundle 'hail2u/vim-css3-syntax'
-" Bundle 'cakebaker/scss-syntax.vim'
-" Bundle 'othree/html5.vim'
-" Bundle 'fatih/vim-go'
-" Bundle 'Blackrush/vim-gocode'
-" Bundle 'tpope/vim-unimpaired.git'
-" Bundle 'vim-ruby/vim-ruby'
-" Bundle 'hashivim/vim-terraform'
-" 
-" syntax on
-" filetype plugin indent on
 
 let mapleader = ","
 
