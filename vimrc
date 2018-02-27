@@ -118,5 +118,6 @@ let g:ackprg = 'ag --vimgrep'
 nmap <M-k>    mo:Ack! "\b<cword>\b" <CR>dd
 nmap <Esc>k   mo:Ack! "\b<cword>\b" <CR>
 
+let g:airline_solarized_bg='dark'
 highlight clear SignColumn
 colorscheme smyck
