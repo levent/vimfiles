@@ -20,6 +20,12 @@ Plug 'wellle/targets.vim'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'
+
+Plug 'tpope/vim-surround'
+Plug 'mileszs/ack.vim'
+
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-rails'
 call plug#end()
 " filetype off
 " 
@@ -145,15 +151,24 @@ let g:gitgutter_sign_modified = '∙'
 let g:gitgutter_sign_removed = '∙'
 let g:gitgutter_sign_modified_removed = '∙'
 
+set updatetime=100 " default is 4s now 100ms (ensure this doesn't cause issues)
+
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>r :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+" fzf
 nmap ; :Buffers<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>r :Tags<CR>
+
+" ack.vim (ag)
+" Tell ack.vim to use ag (the Silver Searcher) instead
+let g:ackprg = 'ag --vimgrep'
+nmap <M-k>    mo:Ack! "\b<cword>\b" <CR>dd
+nmap <Esc>k   mo:Ack! "\b<cword>\b" <CR>
 
 highlight clear SignColumn
 colorscheme smyck
