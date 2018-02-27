@@ -3,29 +3,26 @@ call pathogen#helptags()
 
 set nocompatible
 call plug#begin('~/.vim/plugged')
+
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-
 Plug 'flowtype/vim-flow'
 Plug 'janko-m/vim-test'
-
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-
 Plug 'tpope/vim-fugitive'
-
 Plug 'luochen1990/rainbow'
 Plug 'wellle/targets.vim'
-
 Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'
-
 Plug 'tpope/vim-surround'
 Plug 'mileszs/ack.vim'
-
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rails'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
 let mapleader = ","
@@ -101,6 +98,8 @@ let g:gitgutter_sign_added = '∙'
 let g:gitgutter_sign_modified = '∙'
 let g:gitgutter_sign_removed = '∙'
 let g:gitgutter_sign_modified_removed = '∙'
+
+let g:airline_powerline_fonts = 1
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
