@@ -65,23 +65,28 @@ set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set laststatus=2  " Always show status line.
 set tags=./tags;
 set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
+set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set formatoptions-=or
+set background=dark
+
+set updatetime=100 " default is 4s now 100ms (ensure this doesn't cause issues)
+
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|\.hg|\.svn|tmp|vendor|coverage)$',
   \ }
-set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 map Q <Nop>
 map K <Nop>
+
 " Centre search results
 map N Nzz
 map n nzz
+
 " Don't add the comment prefix when I hit enter or o/O on a comment line.
-set formatoptions-=or
 au BufNewFile,BufRead *.less set filetype=css
 au BufNewFile,BufRead *.scss set filetype=sass
 syntax enable
-set background=dark
 let g:rainbow_active = 1
 " au VimEnter * RainbowParenthesesToggle
 " au Syntax * RainbowParenthesesLoadRound
@@ -89,7 +94,6 @@ let g:rainbow_active = 1
 
 let g:turbux_command_prefix = 'bundle exec'
 let g:ycm_key_detailed_diagnostics = '<leader>b'
-
 let g:terraform_fmt_on_save = 1
 
 " GitGutter styling to use · instead of +/-
@@ -97,8 +101,6 @@ let g:gitgutter_sign_added = '∙'
 let g:gitgutter_sign_modified = '∙'
 let g:gitgutter_sign_removed = '∙'
 let g:gitgutter_sign_modified_removed = '∙'
-
-set updatetime=100 " default is 4s now 100ms (ensure this doesn't cause issues)
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
