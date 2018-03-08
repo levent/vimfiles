@@ -1,4 +1,5 @@
 call pathogen#infect()
+
 call pathogen#helptags()
 
 set nocompatible
@@ -22,6 +23,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rails'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ntpeters/vim-better-whitespace'
 
 call plug#end()
 
@@ -121,3 +123,6 @@ nmap <Esc>k   mo:Ack! "\b<cword>\b" <CR>
 let g:airline_solarized_bg='dark'
 highlight clear SignColumn
 colorscheme smyck
+
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
