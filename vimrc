@@ -5,25 +5,27 @@ call pathogen#helptags()
 set nocompatible
 call plug#begin('~/.vim/plugged')
 
-Plug 'junegunn/seoul256.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'ervandew/supertab'
 Plug 'flowtype/vim-flow'
+Plug 'hashivim/vim-terraform'
 Plug 'janko-m/vim-test'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-fugitive'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/seoul256.vim'
 Plug 'luochen1990/rainbow'
-Plug 'wellle/targets.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'ervandew/supertab'
-Plug 'tpope/vim-surround'
 Plug 'mileszs/ack.vim'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ntpeters/vim-better-whitespace'
+Plug 'wellle/targets.vim'
+Plug 'mustache/vim-mustache-handlebars'
 
 call plug#end()
 
