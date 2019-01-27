@@ -28,6 +28,7 @@ Plug 'wellle/targets.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -130,3 +131,5 @@ colorscheme smyck
 
 " let g:airline_left_sep=''
 " let g:airline_right_sep=''
+
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
