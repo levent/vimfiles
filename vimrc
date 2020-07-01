@@ -1,7 +1,3 @@
-call pathogen#infect()
-
-call pathogen#helptags()
-
 set nocompatible
 call plug#begin('~/.vim/plugged')
 
@@ -20,8 +16,10 @@ Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
+Plug 'thoughtbot/vim-rspec'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'wellle/targets.vim'
@@ -29,6 +27,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -74,6 +73,7 @@ set formatoptions-=or
 set background=dark
 
 set updatetime=100 " default is 4s now 100ms (ensure this doesn't cause issues)
+set tabpagemax=25
 
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
@@ -86,6 +86,17 @@ map K <Nop>
 " Centre search results
 map N Nzz
 map n nzz
+
+
+
+
+" Nerdtree
+map - :NERDTreeToggle<CR> " open/close nerdtree window
+map <leader>r :NERDTreeFind<cr> " this is the key to jump to the nerdtree window from any other window
+autocmd BufWinEnter " NERDTreeFind
+map ] :NERDTreeFind<CR> " pressing this inside any open file in vim will jump to the nerdtree and highlight where that file is -> very useful when you have multiple files open at once
+
+
 
 " Don't add the comment prefix when I hit enter or o/O on a comment line.
 au BufNewFile,BufRead *.less set filetype=css
