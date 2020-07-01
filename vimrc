@@ -48,6 +48,8 @@ map <Leader>b obyebug<cr>puts 'byebug'<esc>:w<cr>
 map <Leader>s <Esc>:w<CR>
 map <Leader>h :nohl<cr>
 map <C-h> :nohl<cr>
+nmap <Leader>i <Plug>(Prettier)
+let g:prettier#exec_cmd_async = 1
 
 set backspace=2 " make backspace work like most other apps
 set encoding=utf-8
